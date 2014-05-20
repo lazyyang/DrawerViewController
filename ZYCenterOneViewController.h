@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ZYCustomViewController.h"
 
-@interface ZYCenterOneViewController : ZYCustomViewController
+@interface ZYCenterOneViewController : UIViewController
 
 @end

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Drawer/ZYDrawerViewController.m"
-            timestampString = "422293132.28506"
+            timestampString = "422296699.104362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "-panGestureRecognized:"
             landmarkType = "5">
          </BreakpointContent>

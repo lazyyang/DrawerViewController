@@ -26,9 +26,6 @@
     
     ZYDrawerViewController *drawer = [[ZYDrawerViewController alloc]initWithLeftViewController:leftView centerViewController:navVC];
     
-    leftView.drawer = drawer;
-    centerVC.drawer = drawer;
-    
     self.window.rootViewController = drawer;
     
     self.window.backgroundColor = [UIColor whiteColor];

@@ -8,6 +8,7 @@
 
 #import "ZYDrawerViewController.h"
 #import "ZYDropCustomView.h"
+#import "ZYCustomViewController.h"
 
 static NSTimeInterval animationTime = 0.2f;
 
@@ -68,6 +69,7 @@ typedef NS_ENUM(NSUInteger, ZYDrawerControllerState)
     self = [super init];
     if (self) {
         self.leftViewController = leftViewController;
+        ((ZYCustomViewController *)self.leftViewController).drawer = self;
         self.centerViewController = centerViewController;
         if ([self.centerViewController isKindOfClass:[UINavigationController class]]) {
             self.rootViewController = ((UINavigationController *)self.centerViewController).topViewController;
