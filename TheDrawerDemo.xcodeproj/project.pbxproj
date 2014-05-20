@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF3DDFC8192BB4B8005EE890 /* ZYCenterThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3DDFC5192BB4B8005EE890 /* ZYCenterThreeViewController.m */; };
+		DF3DDFC9192BB4B8005EE890 /* ZYCenterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3DDFC7192BB4B8005EE890 /* ZYCenterTwoViewController.m */; };
 		DF3DE42E192B3DAE007428ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3DE42D192B3DAE007428ED /* Foundation.framework */; };
 		DF3DE430192B3DAE007428ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3DE42F192B3DAE007428ED /* CoreGraphics.framework */; };
 		DF3DE432192B3DAE007428ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3DE431192B3DAE007428ED /* UIKit.framework */; };
@@ -24,8 +26,6 @@
 		DF3DE46B192B3DF0007428ED /* ZYDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3DE467192B3DF0007428ED /* ZYDrawerViewController.m */; };
 		DF3DE46C192B3DF0007428ED /* ZYDropCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3DE469192B3DF0007428ED /* ZYDropCustomView.m */; };
 		DF3DE46F192B5CB0007428ED /* ZYCenterOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3DE46E192B5CB0007428ED /* ZYCenterOneViewController.m */; };
-		DF3DE472192B5CC4007428ED /* ZYCenterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3DE471192B5CC4007428ED /* ZYCenterTwoViewController.m */; };
-		DF3DE475192B5CD9007428ED /* ZYCenterThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3DE474192B5CD9007428ED /* ZYCenterThreeViewController.m */; };
 		DF3DE479192B67E5007428ED /* ZYNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3DE478192B67E5007428ED /* ZYNextViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF3DDFC4192BB4B8005EE890 /* ZYCenterThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCenterThreeViewController.h; sourceTree = "<group>"; };
+		DF3DDFC5192BB4B8005EE890 /* ZYCenterThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCenterThreeViewController.m; sourceTree = "<group>"; };
+		DF3DDFC6192BB4B8005EE890 /* ZYCenterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCenterTwoViewController.h; sourceTree = "<group>"; };
+		DF3DDFC7192BB4B8005EE890 /* ZYCenterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCenterTwoViewController.m; sourceTree = "<group>"; };
 		DF3DE42A192B3DAE007428ED /* TheDrawerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheDrawerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3DE42D192B3DAE007428ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF3DE42F192B3DAE007428ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,10 +70,6 @@
 		DF3DE469192B3DF0007428ED /* ZYDropCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDropCustomView.m; sourceTree = "<group>"; };
 		DF3DE46D192B5CB0007428ED /* ZYCenterOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCenterOneViewController.h; sourceTree = "<group>"; };
 		DF3DE46E192B5CB0007428ED /* ZYCenterOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCenterOneViewController.m; sourceTree = "<group>"; };
-		DF3DE470192B5CC4007428ED /* ZYCenterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCenterTwoViewController.h; path = Drawer/ZYCenterTwoViewController.h; sourceTree = "<group>"; };
-		DF3DE471192B5CC4007428ED /* ZYCenterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCenterTwoViewController.m; path = Drawer/ZYCenterTwoViewController.m; sourceTree = "<group>"; };
-		DF3DE473192B5CD9007428ED /* ZYCenterThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCenterThreeViewController.h; path = Drawer/ZYCenterThreeViewController.h; sourceTree = "<group>"; };
-		DF3DE474192B5CD9007428ED /* ZYCenterThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCenterThreeViewController.m; path = Drawer/ZYCenterThreeViewController.m; sourceTree = "<group>"; };
 		DF3DE477192B67E5007428ED /* ZYNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNextViewController.h; sourceTree = "<group>"; };
 		DF3DE478192B67E5007428ED /* ZYNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,12 +106,12 @@
 				DF3DE45F192B3DBD007428ED /* ZYLeftViewController.m */,
 				DF3DE46D192B5CB0007428ED /* ZYCenterOneViewController.h */,
 				DF3DE46E192B5CB0007428ED /* ZYCenterOneViewController.m */,
-				DF3DE470192B5CC4007428ED /* ZYCenterTwoViewController.h */,
-				DF3DE471192B5CC4007428ED /* ZYCenterTwoViewController.m */,
-				DF3DE473192B5CD9007428ED /* ZYCenterThreeViewController.h */,
-				DF3DE474192B5CD9007428ED /* ZYCenterThreeViewController.m */,
 				DF3DE477192B67E5007428ED /* ZYNextViewController.h */,
 				DF3DE478192B67E5007428ED /* ZYNextViewController.m */,
+				DF3DDFC4192BB4B8005EE890 /* ZYCenterThreeViewController.h */,
+				DF3DDFC5192BB4B8005EE890 /* ZYCenterThreeViewController.m */,
+				DF3DDFC6192BB4B8005EE890 /* ZYCenterTwoViewController.h */,
+				DF3DDFC7192BB4B8005EE890 /* ZYCenterTwoViewController.m */,
 				DF3DE433192B3DAE007428ED /* TheDrawerDemo */,
 				DF3DE44C192B3DAE007428ED /* TheDrawerDemoTests */,
 				DF3DE42C192B3DAE007428ED /* Frameworks */,
@@ -290,14 +290,14 @@
 			files = (
 				DF3DE46C192B3DF0007428ED /* ZYDropCustomView.m in Sources */,
 				DF3DE43A192B3DAE007428ED /* main.m in Sources */,
-				DF3DE472192B5CC4007428ED /* ZYCenterTwoViewController.m in Sources */,
 				DF3DE46A192B3DF0007428ED /* ZYCustomViewController.m in Sources */,
+				DF3DDFC9192BB4B8005EE890 /* ZYCenterTwoViewController.m in Sources */,
 				DF3DE46F192B5CB0007428ED /* ZYCenterOneViewController.m in Sources */,
 				DF3DE46B192B3DF0007428ED /* ZYDrawerViewController.m in Sources */,
 				DF3DE479192B67E5007428ED /* ZYNextViewController.m in Sources */,
 				DF3DE461192B3DBD007428ED /* ZYLeftViewController.m in Sources */,
 				DF3DE43E192B3DAE007428ED /* ZYAppDelegate.m in Sources */,
-				DF3DE475192B5CD9007428ED /* ZYCenterThreeViewController.m in Sources */,
+				DF3DDFC8192BB4B8005EE890 /* ZYCenterThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +494,7 @@
 				DF3DE458192B3DAE007428ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF3DE459192B3DAE007428ED /* Build configuration list for PBXNativeTarget "TheDrawerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +503,7 @@
 				DF3DE45B192B3DAE007428ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
