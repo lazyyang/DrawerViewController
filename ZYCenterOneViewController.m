@@ -8,6 +8,7 @@
 
 #import "ZYCenterOneViewController.h"
 #import "ZYNextViewController.h"
+#import "ZYDrawerViewController.h"
 
 @interface ZYCenterOneViewController ()
 
@@ -33,6 +34,15 @@
     vc = nil;
 }
 
+- (void)barItemClicked
+{
+    NSLog(@"返回");
+    ZYDrawerViewController *drawer = (ZYDrawerViewController *)self.parentViewController.parentViewController;
+    if ([drawer performSelector:@selector(openDrawer)]) {
+        [drawer openDrawer];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -46,6 +56,9 @@
     [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [btn setTitle:@"下一个页面" forState:UIControlStateNormal];
     [self.view addSubview:btn];
+    
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(barItemClicked)];
+    self.navigationItem.leftBarButtonItem = barItem;
 }
 
 - (void)didReceiveMemoryWarning

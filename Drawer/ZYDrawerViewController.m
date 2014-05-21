@@ -58,6 +58,11 @@ typedef NS_ENUM(NSUInteger, ZYDrawerControllerState)
  */
 @property (nonatomic,assign) UIViewController *rootViewController;
 
+@property (nonatomic,strong) UIPanGestureRecognizer *panGes;
+
+
+@property (nonatomic,strong) UITapGestureRecognizer *tapGes;
+
 
 @end
 
@@ -114,6 +119,7 @@ typedef NS_ENUM(NSUInteger, ZYDrawerControllerState)
         self.centerView.frame = CGRectMake(DrawerLeftWidth, 0, self.centerView.frame.size.width, self.centerView.frame.size.height);
         self.currentState = ZYDrawerControllerStateOpened;
         self.centerViewController.view.userInteractionEnabled = NO;
+        self.tapGes.enabled = YES;
     }];
 }
 
@@ -124,6 +130,7 @@ typedef NS_ENUM(NSUInteger, ZYDrawerControllerState)
         self.centerView.frame = CGRectMake(0, 0, self.centerView.frame.size.width, self.centerView.frame.size.height);
         self.currentState = ZYDrawerControllerStateClosed;
         self.centerViewController.view.userInteractionEnabled = YES;
+        self.tapGes.enabled = NO;
     }];
 }
 
@@ -233,16 +240,15 @@ typedef NS_ENUM(NSUInteger, ZYDrawerControllerState)
     
     self.centerView.backgroundColor = [UIColor redColor];
     
-    UIPanGestureRecognizer *panGes = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGestureRecognized:)];
-    panGes.delegate = self;
-    panGes.delaysTouchesBegan = YES;
-    panGes.cancelsTouchesInView = NO;
-    [self.centerView addGestureRecognizer:panGes];
-    panGes = nil;
+    _panGes = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGestureRecognized:)];
+    self.panGes.delegate = self;
+    self.panGes.delaysTouchesBegan = YES;
+    self.panGes.cancelsTouchesInView = NO;
+    [self.centerView addGestureRecognizer:self.panGes];
     
-    UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapGestureRecognized:)];
-    [self.centerView addGestureRecognizer:tapGes];
-    tapGes = nil;
+    _tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapGestureRecognized:)];
+    self.tapGes.enabled = NO;
+    [self.centerView addGestureRecognizer:self.tapGes];
     
     [self addLeftViewController];
     [self addCenterViewController];
